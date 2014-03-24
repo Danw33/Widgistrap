@@ -20,7 +20,7 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ) , 'wigistrap' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ) , 'widgistrap' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-collapse">
 			<?php
