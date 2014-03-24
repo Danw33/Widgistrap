@@ -19,7 +19,7 @@
 get_header();
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid index">
     <div class="row">
 	<div id="content-container" class="col-md-8">
 	    <section id="content" role="main">
