@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Wigistrap Copyright (C) 2014 Daniel Wilson
  *
@@ -19,5 +18,29 @@
 
 get_header();
 ?>
+
+<div class="container-fluid">
+    <div class="row">
+	<div id="content-container" class="col-md-8">
+	    <section id="content" role="main">
+		<?php
+		if( have_posts() ) {
+		    while( have_posts() ) {
+			the_post();
+			get_template_part( 'entry' );
+			comments_template();
+		    }
+		}
+
+		get_template_part( 'nav' , 'below' );
+		?>
+	    </section>
+	</div><!-- /#content-container -->
+
+	<div id="sidebar-container" class="col-md-4">
+	    <?php get_sidebar(); ?>
+	</div><!-- /#sidebar-container -->
+    </div>
+</div><!-- /.container-fluid -->
 
 <?php get_footer(); ?>
