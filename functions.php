@@ -23,11 +23,11 @@
  */
 function widgistrap_widgets_init() {
 
-    //Primary Right Sidebar
+    //Primary Right Sidebar (Primary Widget Area)
     register_sidebar( array(
 	'name' => 'Primary Right sidebar' ,
-	'id' => 'primary-right' ,
-	'before_widget' => '<div class="sidebar-primary-right-widget">' ,
+	'id' => 'primary-widget-area' ,
+	'before_widget' => '<div class="primary-widget-area-widget widget">' ,
 	'after_widget' => '</div>' ,
 	'before_title' => '<h2 class="rounded">' ,
 	'after_title' => '</h2>' ,
@@ -37,7 +37,7 @@ function widgistrap_widgets_init() {
     register_sidebar( array(
 	'name' => 'Widgipage First Column' ,
 	'id' => 'widgipage-col-1' ,
-	'before_widget' => '<div class="widgipage-col-1-widget">' ,
+	'before_widget' => '<div class="widgipage-col-1-widget widget">' ,
 	'after_widget' => '</div>' ,
 	'before_title' => '<h2 class="rounded">' ,
 	'after_title' => '</h2>' ,
@@ -46,7 +46,7 @@ function widgistrap_widgets_init() {
     register_sidebar( array(
 	'name' => 'Widgipage Second Column' ,
 	'id' => 'widgipage-col-2' ,
-	'before_widget' => '<div class="widgipage-col-2-widget">' ,
+	'before_widget' => '<div class="widgipage-col-2-widget widget">' ,
 	'after_widget' => '</div>' ,
 	'before_title' => '<h2 class="rounded">' ,
 	'after_title' => '</h2>' ,
@@ -55,7 +55,7 @@ function widgistrap_widgets_init() {
     register_sidebar( array(
 	'name' => 'Widgipage Third Column' ,
 	'id' => 'widgipage-col-3' ,
-	'before_widget' => '<div class="widgipage-col-3-widget">' ,
+	'before_widget' => '<div class="widgipage-col-3-widget widget">' ,
 	'after_widget' => '</div>' ,
 	'before_title' => '<h2 class="rounded">' ,
 	'after_title' => '</h2>' ,
