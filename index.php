@@ -21,7 +21,7 @@ get_header();
 
 <div class="container-fluid index">
     <div class="row">
-	<div id="content-container" class="col-md-8">
+	<div id="content-container" class="col-md-9">
 	    <section id="content" role="main">
 		<?php
 		if( have_posts() ) {
@@ -37,7 +37,7 @@ get_header();
 	    </section>
 	</div><!-- /#content-container -->
 
-	<div id="sidebar-container" class="col-md-4">
+	<div id="sidebar-container" class="col-md-3">
 	    <?php get_sidebar(); ?>
 	</div><!-- /#sidebar-container -->
     </div>
