@@ -26,10 +26,33 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-collapse">
 			<?php
-			wp_nav_menu( array(
-			    'theme_location' => 'main-menu' ) );
-			get_search_form();
+			$nav_config = array(
+			    'theme_location' => '' ,
+			    'menu' => '' ,
+			    'container' => 'div' ,
+			    'container_class' => 'collapse navbar-collapse' ,
+			    'container_id' => 'navbar-collapse' ,
+			    'menu_class' => 'nav navbar-nav' ,
+			    'menu_id' => 'nav-primary' ,
+			    'echo' => true ,
+			    'fallback_cb' => 'wp_page_menu' ,
+			    'before' => '' ,
+			    'after' => '' ,
+			    'link_before' => '' ,
+			    'link_after' => '' ,
+			    'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>' ,
+			    'depth' => 0 ,
+			    'walker' => ''
+			);
+
+			wp_nav_menu( $nav_config );
 			?>
+			<form class="navbar-form navbar-right search-form" role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+			    <div class="form-group">
+				<input type="text" class="form-control search-field" value="" name="s" placeholder="<?php echo __( 'Search' , 'widgistrap' ); ?>">
+			    </div>
+			    <button type="submit" class="btn btn-default search-submit"><?php echo __( 'Search' , 'widgistrap' ); ?></button>
+			</form>
 		    </div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	    </nav>
