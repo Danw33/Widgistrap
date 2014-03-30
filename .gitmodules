@@ -1,0 +1,4 @@
+[submodule "third-party/navwalker"]
+	path = third-party/navwalker
+	url = git@github.com:twittem/wp-bootstrap-navwalker.git
+	branch = master
