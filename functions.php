@@ -65,6 +65,13 @@ function widgistrap_widgets_init() {
 add_action( 'widgets_init' , 'widgistrap_widgets_init' );
 
 /**
+ * Menu Awesomeness
+ * Thanks to the awesome wp-bootstrap-navwalker by @twittem
+ */
+require_once('wp_bootstrap_navwalker.php');
+register_nav_menu( 'primary' , __( 'Primary Navigation' , 'widgistrap' ) );
+
+/**
  * Register the Theme Customiser Stuff
  * @param type $wp_customize
  */
