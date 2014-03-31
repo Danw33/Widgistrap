@@ -24,13 +24,11 @@ get_header();
 	<div id="content-container" class="col-md-9">
 	    <section id="content" role="main">
 		<?php
-		if( have_posts() ) {
-		    while( have_posts() ) {
-			the_post();
+		if( have_posts() ) : while( have_posts() ) : the_post();
 			get_template_part( 'entry' );
 			comments_template();
-		    }
-		}
+		    endwhile;
+		endif;
 
 		get_template_part( 'nav' , 'below' );
 		?>
@@ -38,7 +36,7 @@ get_header();
 	</div><!-- /#content-container -->
 
 	<div id="sidebar-container" class="col-md-3">
-	    <?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 	</div><!-- /#sidebar-container -->
     </div>
 </div><!-- /.container-fluid -->

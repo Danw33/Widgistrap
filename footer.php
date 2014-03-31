@@ -9,5 +9,6 @@
 </div><!-- /#outer-container -->
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/static/js/bootstrap.min.js"></script>
 <?php wp_footer(); ?>
+</div><!-- /.page-holder -->
 </body>
 </html>

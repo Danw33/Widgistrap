@@ -38,9 +38,9 @@ function widgistrap_widgets_init() {
 	'name' => 'Widgipage First Column' ,
 	'id' => 'widgipage-col-1' ,
 	'before_widget' => '<div class="panel panel-default panel-widget">' ,
-	'after_widget' => '</div></div>' ,
+	'after_widget' => "</div><!-- /.panel-body -->\n</div><!-- /.panel-widget -->" ,
 	'before_title' => '<div class="panel-heading"><h3 class="panel-title rounded">' ,
-	'after_title' => '</h3></div><div class="panel-body">' ,
+	'after_title' => '</h3></div><!-- /.panel-heading -->' . "\n" . '<div class="panel-body">' ,
     ) );
 
     register_sidebar( array(
