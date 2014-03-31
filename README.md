@@ -11,6 +11,8 @@ Widgistrap is developed by Daniel Wilson, but wouldn't be possible without many 
  - Twitter's Bootstrap
  - twittem's wp-bootstrap-navwalker
  - TidyThemes' BlankSlate
+ - thomaspark's bootswatch (specifically, the Darkly Template)
+ - pikock's bootstrap-magic
  - Automattic's WordPress
 
 ## License
