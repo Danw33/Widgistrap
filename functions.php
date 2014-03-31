@@ -28,9 +28,9 @@ function widgistrap_widgets_init() {
 	'name' => 'Primary Right sidebar' ,
 	'id' => 'primary-widget-area' ,
 	'before_widget' => '<div class="panel panel-default panel-widget">' ,
-	'after_widget' => '</div></div>' ,
+	'after_widget' => "</div><!-- /.panel-body -->\n</div><!-- /.panel-widget -->" ,
 	'before_title' => '<div class="panel-heading"><h3 class="panel-title rounded">' ,
-	'after_title' => '</h3></div><div class="panel-body">' ,
+	'after_title' => '</h3></div><!-- /.panel-heading -->' . "\n" . '<div class="panel-body">' ,
     ) );
 
     //Two- and Three-Column Widgipage
@@ -55,10 +55,10 @@ function widgistrap_widgets_init() {
     register_sidebar( array(
 	'name' => 'Widgipage Third Column' ,
 	'id' => 'widgipage-col-3' ,
-	'before_widget' => '<div class="widgipage-col-3-widget widget">' ,
-	'after_widget' => '</div></div>' ,
-	'before_title' => '<h2 class="rounded">' ,
-	'after_title' => '</h2>' ,
+	'before_widget' => '<div class="panel panel-default panel-widget">' ,
+	'after_widget' => "</div><!-- /.panel-body -->\n</div><!-- /.panel-widget -->" ,
+	'before_title' => '<div class="panel-heading"><h3 class="panel-title rounded">' ,
+	'after_title' => '</h3></div><!-- /.panel-heading -->' . "\n" . '<div class="panel-body">' ,
     ) );
 }
 
