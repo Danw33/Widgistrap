@@ -8,8 +8,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" media="all" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/static/css/bootstrap.min.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/static/css/magic-bootstrap.css" media="all" />
-	<!--<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/static/css/bootstrap-theme.min.css" media="all" />-->
+	<!--<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/static/css/magic-bootstrap.css" media="all" />-->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/static/css/bootstrap-theme.min.css" media="all" />
 	<?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
